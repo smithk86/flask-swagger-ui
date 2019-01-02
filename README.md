@@ -1,22 +1,22 @@
-# flask-swagger-ui
+# quart-swagger-ui
 
-Simple Flask blueprint for adding [Swagger UI](https://github.com/swagger-api/swagger-ui) to your flask application.
+Simple Quart blueprint for adding [Swagger UI](https://github.com/swagger-api/swagger-ui) to your quart application.
 
 Included Swagger UI version: 3.18.0.
 
 ## Installation
 
-`pip install flask-swagger-ui`
+`pip install https://github.com/smithk86/quart-swagger-ui`
 
 ## Usage
 
 Example application:
 
 ```python
-from flask import Flask
-from flask_swagger_ui import get_swaggerui_blueprint
+from quart import Quart
+from quart_swagger_ui import get_swaggerui_blueprint
 
-app = Flask(__name__)
+app = Quart(__name__)
 
 
 SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')

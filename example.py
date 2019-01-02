@@ -1,7 +1,7 @@
-from flask import Flask
-from flask_swagger_ui import get_swaggerui_blueprint
+from quart import Quart
+from quart_swagger_ui import get_swaggerui_blueprint
 
-app = Flask(__name__)
+app = Quart(__name__)
 
 
 SWAGGER_URL = '/api/docs'  # URL for exposing Swagger UI (without trailing '/')

@@ -5,17 +5,17 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'flask_swagger_ui/README.md'), encoding='utf-8') as f:
+with open(path.join(here, 'quart_swagger_ui/README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='flask-swagger-ui',
+    name='quart-swagger-ui',
     version='3.18.0',
-    description='Swagger UI blueprint for Flask',
+    description='Swagger UI blueprint for Quart',
     long_description=long_description,
     zip_safe=False,
 
-    url='https://github.com/sveint/flask-swagger-ui',
+    url='https://github.com/sveint/quart-swagger-ui',
 
     author='Svein Tore Koksrud Seljebotn',
     author_email='sveint@gmail.com',
@@ -25,16 +25,14 @@ setup(
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.7',
     ],
 
-    keywords='flask swagger',
-    packages=['flask_swagger_ui'],
-    install_requires=['flask'],
+    keywords='quart swagger',
+    packages=['quart_swagger_ui'],
+    install_requires=['quart'],
     package_data={
-        'flask_swagger_ui': [
+        'quart_swagger_ui': [
             'README.md',
             'templates/*.html',
             'dist/VERSION',
