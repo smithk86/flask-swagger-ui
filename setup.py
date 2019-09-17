@@ -10,7 +10,7 @@ with open(path.join(here, 'quart_swagger_ui/README.md'), encoding='utf-8') as f:
 
 setup(
     name='quart-swagger-ui',
-    version='3.18.0',
+    version='3.23.10',
     description='Swagger UI blueprint for Quart',
     long_description=long_description,
     zip_safe=False,
